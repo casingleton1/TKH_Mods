@@ -1,0 +1,11 @@
+a. What is Git and how is it different than GitHub?
+
+Github is a tool that allows a repository to be hosted online or in the cloud. Repos are able to be public or private. It is Graphical user interface that enables users to work on codes via a more visually accessible platform via those public repositories. It differs from git on your local computer in the sense that developers or team members can use added features while still having the same code management as git. 
+
+b. Benefits of Version Control:
+
+Git is a version control system or tool running on your local machine. A version control system is responsible for keeping track of the files your codes are being written in making them easily accessible to multiple parties for tracking or collaboration. Coders and developers use it compare work and revert changes to an earlier state if necessary. One of the benefits of version control is a reduction of errors in development. Because all changes are tracked and displayed, all developers are able to see what was done in the project. So, when there is a problem in the code it can easily be seen and fixed. Also, if something is deleted, it can be recovered. Another benefit is efficiency of project development. Because all parties have the ability to work on the project remotely and independently, the process is not hindered. Each working copy is maintained on the local devices until incorporated or merged into the staging branch. This facilitates the other benefit of personal accountability. The version control system keeps everyone informed of who did what and at what time. It also gives each developer a personal copy of all the work done.
+
+c. Why do we use the Terminal?
+
+The Terminal or a terminal window is an interface that allows users to send direct instructions or inputs to the computer via the command line. We still use them because due to many different operating systems existing, the command line is still the most universal way to run programs/commands. Graphical desktop environments or applications vary; so, getting the same output from each would call for different instructions. While using the terminal command line interface is succinct and standardized (for the most part).
