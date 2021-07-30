@@ -1,1 +1,15 @@
-a.What a computer does when you type a letter on a keyboard:
+a. What a computer does when you type a letter on a keyboard:
+
+There are chips in your keyboard. When you type a key on the keyboard of computer, the computer or CPU receives a signal of released information known as a scan code. When the key connects to the switch on the motherboard, within the peripheral keyboard, a message is sent from that hardware that needs to be “decoded”. Each key has a particular data/coding attached to it which is based on the keyboard layout selected in user settings of the OS. If you are utilizing multiple types of keyboards on your computer, you may need to tell your program or software which type of keyboard you are using. Also, the operating system in constantly getting ready for key strokes so they can be translated at a moment’s notice. When the operating system recognizes the closed switch as a key stroke, this signals the beginning of datagram forwarding. That information or data is then transmitted through the internal network of your node, to the software and window you are using to create an event. The operating system then takes the event and processes it through an interface which translates the letter into Unicode or ASCII code. The software (such as Microsoft word or TextEdit) takes this code and applies the required editing and formatting indicated by that utilized program. It then outputs an image representing the fully transmitted data on your screen. Your monitor is able to display the binary depiction due the computer’s internal graphics processing unit. Each key is handled in the same manner.
+
+b. What are the uses of Docker?
+
+Docker is a system tool that allows software/applications to be utilized in different environments by means of containerization. Meaning, docker users the Kernel files of an OS to make images of software for local operation, but runs the software virtually from any location (cloud based docker hub). Developers use it to distribute new applications to team members and also test the portability newly developed software. 
+
+c. Why dockers are recommended:
+
+Dockers are the recommend form of virtualization because they utilize minimal systems resources when storing images and running containers. Unlike virtual machines, they don’t require a full copy of the software to be hosted/booted for running. Therefore, the startup takes less time and the application requires less space to operate.
+
+d. Main features of Docker:
+
+One of the main characteristics or features of a docker system is the existence of a daemon which is a program that runs the images/containers in the background of a system. Another is the ability to stack its services virtually. Application size/data can also be condensed giving multiple teams access to images stored online. When a developer is gives a command to pull an image locally that isn’t present on his device, docker will automatically pull the necessary container images from the online hub. 
