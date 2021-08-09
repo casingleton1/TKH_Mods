@@ -1,0 +1,79 @@
+Last login: Fri Aug  6 21:42:10 on ttys008
+(base) Chriss-MacBook-Pro:~ lionshare$ python
+Python 3.7.9 (default, Aug 31 2020, 07:22:35) 
+[Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a = 5
+>>> print(type(a))
+<class 'int'>
+>>> alist + [1,2,'a']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'alist' is not defined
+>>> alist = [1,2,'a']
+>>> print(type(alist))
+<class 'list'>
+>>> heights + [5,4,6,7,3,5]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'heights' is not defined
+>>> heights = [5,4,6,7,3,5]
+>>> heights.sort()
+>>> print(heights)
+[3, 4, 5, 5, 6, 7]
+>>> alist.reverse()
+>>> print(alist)
+['a', 2, 1]
+>>> astring = 'hello world'
+>>> bstring = astring.replace('world', 'there!')
+>>> print(bstring)
+hello there!
+>>> dir(alist)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> class Rectangle:
+...     def__init__(self, height, widlth):
+  File "<stdin>", line 2
+    def__init__(self, height, widlth):
+                                     ^
+SyntaxError: invalid syntax
+>>> class Rectangle:
+...     def __init__(self, height, width):
+...             self.height = height
+...             self.width = width
+...     def area(self):
+...             area = self.height * self.width
+...             return area
+... 
+>>> rect1 = Rectangle(12, 10)
+>>> print(type(rect1))
+<class '__main__.Rectangle'>
+>>> rect1.height
+12
+>>> rect1.width
+10
+>>> rect1.area()
+120
+>>> dir(rect1)
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'area', 'height', 'width']
+>>> import math
+>>> print(type(math))
+<class 'module'>
+>>> dir(math)
+['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'pi', 'pow', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']
+>>> help(math)
+
+>>> math.log(100,10)
+2.0
+>>> math.pi
+3.141592653589793
+>>> import math as mt
+>>> mt.log(100.10)
+4.6061696863211745
+>>> mt.log(100,10)
+2.0
+>>> from math import log, pi
+>>> from numpy import asarray
+>>> 
+>>> log(100,10)
+2.0
+>>> 
