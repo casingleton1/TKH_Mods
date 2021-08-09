@@ -1,0 +1,295 @@
+Last login: Fri Aug  6 19:33:01 on ttys006
+(base) Chriss-MacBook-Pro:~ lionshare$ python
+Python 3.7.9 (default, Aug 31 2020, 07:22:35) 
+[Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> alist = ['Tom', 54, 'Julia', 78]
+>>> alist
+['Tom', 54, 'Julia', 78]
+>>> alist.append(help)
+>>> alist
+['Tom', 54, 'Julia', 78, Type help() for interactive help, or help(object) for help about object.]
+>>> help()
+
+Welcome to Python 3.7's help utility!
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the Internet at https://docs.python.org/3.7/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, symbols, or topics, type
+"modules", "keywords", "symbols", or "topics".  Each module also comes
+with a one-line summary of what it does; to list the modules whose name
+or summary contain a given string such as "spam", type "modules spam".
+
+help> sum
+
+help> quit
+
+You are now leaving help and returning to the Python interpreter.
+If you want to ask for help on a particular object directly from the
+interpreter, you can type "help(object)".  Executing "help('string')"
+has the same effect as typing a particular string at the help> prompt.
+>>> blists
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'blists' is not defined
+>>> blists = [
+...     ['Tom', 54],
+...     ['Julia', 78]
+... ]
+>>> blists
+[['Tom', 54], ['Julia', 78]]
+>>> blists[-1]
+['Julia', 78]
+>>> blists[-2][0]
+'Tom'
+>>> blists.append(['Mak', 90])
+>>> blists
+[['Tom', 54], ['Julia', 78], ['Mak', 90]]
+>>> a = [0]*5
+>>> a
+[0, 0, 0, 0, 0]
+>>> a = [[0]*cols]*rows
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'cols' is not defined
+>>> a = [[0]*cols]*rows
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'cols' is not defined
+>>> cols = 5
+>>> rows = 4
+>>> dlist = [[1]*cols]*rows
+>>> dlist
+[[1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1]]
+>>> tupl = ('Tom', 78)
+>>> tupl[1] = 90
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> tup2 = ('Julia', 89)
+>>> tup1 + tup2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tup1' is not defined
+>>> tup1 = (
+... 
+... 
+... tup1 = ('Tom', 78)
+  File "<stdin>", line 4
+    tup1 = ('Tom', 78)
+         ^
+SyntaxError: invalid syntax
+>>> tup1 = ('Tom', 78)
+>>> tup1[1] = 90
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> tup2 = ('Juila', 89)
+>>> tup1 + tup2
+('Tom', 78, 'Juila', 89)
+>>> tup1
+('Tom', 78)
+>>> tup3 = tup1 + tup2
+>>> tup3
+('Tom', 78, 'Juila', 89)
+>>> len(tup3)
+4
+>>> country_code = {'India': 1, 'USA': 2, 'China': 3}
+>>> print(country_code)
+{'India': 1, 'USA': 2, 'China': 3}
+>>> print(country)code['China'])
+  File "<stdin>", line 1
+    print(country)code['China'])
+                     ^
+SyntaxError: invalid syntax
+>>> print(country_code['China'])
+3
+>>> country_code['UAE'] = 4
+>>> print(country_code)
+{'India': 1, 'USA': 2, 'China': 3, 'UAE': 4}
+>>> "inda' in country_code
+  File "<stdin>", line 1
+    "inda' in country_code
+                         ^
+SyntaxError: EOL while scanning string literal
+>>> 'Inda' in country_code
+False
+>>> x = True
+>>> type(x)
+<class 'bool'>
+>>> 1 == 2
+False
+>>> 1 != 2
+True
+>>> a = 1
+>>> b = 2
+>>> print (a == b)
+False
+>>> print (a > b)
+False
+>>> print (a < b)
+True
+>>> print (a != b)
+True
+>>> color = 'red'
+>>> if color == 'red':
+...     print("Color is red!")
+... 
+Color is red!
+>>> print("Color problem is solved!!")
+Color problem is solved!!
+>>> color = 'kjh'
+>>> if color == 
+  File "<stdin>", line 1
+    if color == 
+               ^
+SyntaxError: invalid syntax
+>>> color = 'kjh'
+>>> if color == 'red':
+...     print("Color is red!")
+... else:
+...     print("Color is not red!")
+... print("Color problem is solved!!")
+  File "<stdin>", line 5
+    print("Color problem is solved!!")
+        ^
+SyntaxError: invalid syntax
+>>> color = 'kjh'
+>>> if color == 'red':
+...     print("Color is red!")
+... else:
+...     print("color is not red!")
+... 
+color is not red!
+>>> print("color problem is solved!!")
+color problem is solved!!
+>>> color = 'green'
+>>> if color == 'red':
+...     print("Color is red!")
+... elif color == 'green':
+...     print("Color is green!")
+... else:
+...     print("color is not red!")
+... 
+Color is green!
+>>> print("Color problem is solved!!")
+Color problem is solved!!
+>>> age = 15
+>>> if age >= 18:
+...     print("Adult")
+... else:
+...     print("Juvenlie")
+... 
+Juvenlie
+>>> a = 0
+>>> not(a)
+True
+>>> a = 3
+>>> not(a)
+False
+>>> a = True
+>>> not(a)
+False
+>>> score = 76
+>>> percentile = 83
+>>> 
+>>> if score > 75 or percentile > 90:
+...     print("Admission successful!")
+... else:
+...     print("Try again next year")
+... 
+Admission successful!
+>>> score = 76
+>>> percentile = 83
+>>> 
+>>> if score > 75 or percentile > 90:
+...     print("Admission successful!")
+... else:
+...     print("Try again next year")
+... 
+Admission successful!
+>>> range(5)
+range(0, 5)
+>>> for i in range(5)
+  File "<stdin>", line 1
+    for i in range(5)
+                    ^
+SyntaxError: invalid syntax
+>>> for i in range(5):
+...     print(i)
+... 
+0
+1
+2
+3
+4
+>>> for i in range(1, 10, 2):
+...     product = 8 * i
+...     print(product)
+... 
+8
+24
+40
+56
+72
+>>> names = ('harshit', 'shubham', 'sahil')
+>>> for name in names:
+...     print(name.upper())
+... 
+HARSHIT
+SHUBHAM
+SAHIL
+>>> age = [12,43,45,10]
+>>> i = 0
+>>> while i < len(age):
+...     if age[i] >= 18:
+...         print("Adult")
+...     else:
+...         print("Juvenile")
+...     i += 1
+... 
+Juvenile
+Adult
+Adult
+Juvenile
+>>> cubes = [n** 3 for n in range(1,10)]
+>>> print(cubes)
+[1, 8, 27, 64, 125, 216, 343, 512, 729]
+>>> cubes = []
+>>> for i in range(1,10):
+...     cubes.append(i ** 3)
+... print(cubes)
+  File "<stdin>", line 3
+    print(cubes)
+        ^
+SyntaxError: invalid syntax
+>>> cubes = []
+>>> for i in range(1,10):
+...     cubes.append(i ** 3)
+... print(cubes)
+  File "<stdin>", line 3
+    print(cubes)
+        ^
+SyntaxError: invalid syntax
+>>> help(abs)
+
+>>> abs(2-5)
+3
+>>> def add_two_numbers(a, b):
+...     sum = a + b
+...     return sum
+... 
+>>> add_two_numbers(5,11)
+16
+>>> def fahr_to_celsius(temp):
+...     tempInCel = (temp - 32) * 5/9
+...     return tempInCel
+... 
+>>> fahr_to_celsius(50)
+10.0
+>>> 
